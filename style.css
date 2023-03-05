@@ -1,0 +1,75 @@
+:root {
+  --rc-color-brand: #90dde4ff;
+  --rc-background-color: (120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+/* COLORS PALETTE */
+
+/* --rc-color-n-000: #fff;
+--rc-color-n-100: #cfcfc8;
+--rc-color-n-300: #90dde4ff;
+--rc-color-n-500: #5b5b5a;
+--rc-color-n-900: #0e0e0e; */
+
+
+
+/* BACKGROUND COLORS */
+
+
+/* BORDER COLOR */
+
+/* TYPOGRAPHY */
+--rc-typography-name: href="//db.onlinewebfonts.com/c/4fe6659445e19036f732ed4659af7c25?family=Bernhard+Schoenschrift+EF" rel="stylesheet" type="text/css"/
+--rc-typography-normal: https://fonts.google.com/specimen/Montserrat?category=Sans+Serif
+
+
+/* TYPOGRAPHY COLOR */
+
+
+
+
+body {
+    background-color: var(--rc-background-color)
+    /* padding: 3rem 4rem; */
+}
+
+header {
+    padding-bottom: 2rem;
+}
+
+header img {
+    height: 150px;
+    padding-left: 40%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.storytelling-section {
+    width: 500px;
+    height: 500px;
+}
+
+.storytelling-section img {
+    width: 500px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .rrss ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rrss img {
+    width: 50px;
+} */
