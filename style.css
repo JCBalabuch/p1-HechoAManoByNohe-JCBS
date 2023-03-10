@@ -1,67 +1,146 @@
 :root {
-  --rc-color-brand: #90dde4ff;
-  --rc-background-color: (120deg, #fdfbfb 0%, #ebedee 100%);
-}
+  --hmn-color-brand: #90dde4;
+  --hmn-background-color: (120deg, #fdfbfb 0%, #ebedee 100%);
 
 /* COLORS PALETTE */
+--hmn-color-n-000: #ffffff
+--hmn-color-n-100: #cfcfc8
+--hmn-color-n-300: #90dde4
+--hmn-color-n-500: #5b5b5a
+--hmn-color-n-900: #8e8e8e
 
-/* --rc-color-n-000: #fff;
---rc-color-n-100: #cfcfc8;
---rc-color-n-300: #90dde4ff;
---rc-color-n-500: #5b5b5a;
---rc-color-n-900: #0e0e0e; */
-
-
-
-/* BACKGROUND COLORS */
-
+/* BACKGROUND COLOR */
+--hmn-color-background-primary: var(--hmn-background-color)
+--hmn-color-background-secondary: var(--hmn-color-brand)
+--hmn-color-background-tertiary: var(hmn-color-n-300)
+--hmn-color-background-button: var(--hmn-color-brand)
 
 /* BORDER COLOR */
+--hmn-color-border-button: var(--hmn-color-n-500)
 
 /* TYPOGRAPHY */
---rc-typography-name: href="//db.onlinewebfonts.com/c/4fe6659445e19036f732ed4659af7c25?family=Bernhard+Schoenschrift+EF" rel="stylesheet" type="text/css"/
---rc-typography-normal: https://fonts.google.com/specimen/Montserrat?category=Sans+Serif
+--hmn-typography-brand: href="//db.onlinewebfonts.com/c/4fe6659445e19036f732ed4659af7c25?family=Bernhard+Schoenschrift+EF" rel="stylesheet" type="text/css"/
+--hmn-typography-normal: https://fonts.google.com/specimen/Montserrat?category=Sans+Serif
 
 
 /* TYPOGRAPHY COLOR */
+--hmn-color-typography-header: var(--hmn-background-color)
+--hmn-color-typography-nav: var(--hmn-color-n-500)
+--hmn-color-typography-main: var(--hmn-color-n-900)
+--hmn-color-typography-button: var(--hmn-color-n-500)
+--hmn-color-typography-footer: var(--hmn-color-n-900)
+}
 
 
 
 
-body {
-    background-color: var(--rc-background-color)
-    /* padding: 3rem 4rem; */
+html {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: var(--hmn-background-color);
+    color: var(--hmn-color-n-900);
+    font-family: var(--hmn-typography-normal);
+    margin: 0 auto;
+    max-width: 1000px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px
+    50px 
+    1fr
+    200px;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
 }
 
 header {
-    padding-bottom: 2rem;
+    grid-area: header;
+    background-color: #90dde4;
+    margin: 0;
+    padding: 0;
 }
 
-header img {
-    height: 150px;
-    padding-left: 40%;
+.header-logo > img {
+    width: 200px;
+    height: 200px;
+    align-items: center;
+}
+
+nav {
+    grid-area: nav;
+    background-color: royalblue;
+    text-align: center;
+    display: block;
+
 }
 
 main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.storytelling-section {
-    width: 500px;
-    height: 500px;
-}
-
-.storytelling-section img {
-    width: 500px;
+    grid-area: main;
+    background-color: red;
 }
 
 footer {
-    display: flex;
+    grid-area: footer;
+    background-color: black;
     align-items: center;
     justify-content: space-between;
+  }
+
+/* .container {
+    background-color: var(--hmn-background-color);
+    color: var(--hmn-color-n-900);
+    font-family: var(--hmn-typography-normal);
+    max-width: 1000px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px
+    50px
+    1fr
+    100px;
+    grid-template-areas:
+    "header header"
+    "nav nav" 
+    "main main"
+    "footer footer";
+} */
+
+/* 
+body {
+  background-color: var(hmn-background-color);
+  padding: 3rem 4rem;
 }
+
+header {
+  padding-bottom: 2rem;
+}
+
+header img {
+  height: 150px;
+  padding-left: 40%;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.storytelling-section {
+  width: 500px;
+  height: 500px;
+}
+
+.storytelling-section img {
+  width: 500px;
+}
+
+ */
 
 /* .rrss ul {
     display: flex;
