@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montaga&display=swap");
 
 * {
   font-family: "Tangerine";
@@ -10,6 +10,13 @@
 }
 
 :root {
+  /* RESET */
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+
+  /* COLORS */
   --hmn-color-brand: #90dde4;
   --hmn-background-color: linear-gradient(
     140deg,
@@ -49,16 +56,15 @@
 
   /* FONT SIZE */
   --hmn-typography-h1: 7em;
-  --hmn-typography-h2: 4em;  
+  --hmn-typography-h2: 4em;
   --hmn-typography-h3: 1.5em;
   --hmn-typography-p: 1.25em;
-  --hmn-typography-a: 2em;
+  --hmn-typography-a: 2.3em;
 }
 
 html {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -66,6 +72,7 @@ body {
   color: var(--hmn-color-n-900);
   font-family: var(--hmn-typography-brand);
   margin: 0 auto;
+  padding: 2rem;
   max-width: 100%;
   min-height: 100vh;
   display: grid;
@@ -79,19 +86,12 @@ body {
 
 header {
   margin: 0;
-  padding: 0;
-  width: 80%;
+  padding: 2rem;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-header,
-.header-nav {
-  display: flex;
   align-items: center;
-  margin: 0 auto;
-  max-width: 1000 px;
 }
 
 .header-logo > a > img {
@@ -101,9 +101,17 @@ header,
 
 nav {
   margin: 0;
-  padding: 0 auto;
-  font: var(--hmn-typography-normal);
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.header-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
 }
 
 ul {
@@ -135,7 +143,7 @@ ul {
   height: 40%;
 }
 
-h1 { 
+.storytelling-section > h1 {
   margin: 0 100px;
   text-align: right;
   padding: 0;
@@ -143,7 +151,7 @@ h1 {
   font-size: var(--hmn-typography-h1);
 }
 
-h3 { 
+.storytelling-section > h3 {
   margin: 0 100px;
   padding: 0;
   font-size: var(--hmn-typography-h3);
@@ -160,8 +168,8 @@ h3 {
 }
 
 .storytelling-section-1 > img {
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
   margin: 0 100px;
   border-radius: 15rem;
 }
