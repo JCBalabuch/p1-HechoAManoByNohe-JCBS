@@ -50,7 +50,7 @@ html {
 
   /* TYPOGRAPHY COLOR */
   --hmn-color-typography-brand: var(--hmn-color-brand);
-  --hmn-color-typography-nav: var(--hmn-color-n-500);
+  --hmn-color-typography-nav: var(--hmn-color-n-900);
   --hmn-color-typography-main: var(--hmn-color-n-900);
   --hmn-color-typography-button: var(--hmn-color-n-500);
   --hmn-color-typography-footer: var(--hmn-color-n-900);
@@ -59,7 +59,7 @@ html {
   --hmn-typography-h1: 6em;
   --hmn-typography-h2: 4.5em;
   --hmn-typography-h3: 2em;
-  --hmn-typography-p: 1em;
+  --hmn-typography-p: 1.4em;
   --hmn-typography-a: 2em;
 }
 
@@ -72,7 +72,6 @@ html {
 .container {
   margin: 0 auto;
   padding: 0 5px;
-  /* max-width: 95%; */
   background-color: var(--hmn-background-color);
   color: var(--hmn-color-n-900);
   font-family: var(--hmn-typography-normal);
@@ -82,12 +81,12 @@ html {
 }
 
 header {
-  height: 10vh;
+  height: 15vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
-  top: 20px;
+  top: 10px;
   backdrop-filter: blur(8px);
   background-color: var(--hmn-color-n-000) transparent;
 }
@@ -127,7 +126,6 @@ ul {
 }
 
 main {
-  border: 2px solid red;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -140,6 +138,8 @@ main {
 .imagenFondo {
   width: 100%;
   height: 50vh;
+  display: flex;
+  align-items: center;
 }
 
 .imagenFondo img {
@@ -151,20 +151,20 @@ main {
 .storytelling-section {
   width: 100%;
   height: 1fr;
-  margin-top: 50px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: center;
 }
 
 .storytelling-section-1 {
-  margin-top: 100px;
+  margin-top: 50px;
   display: block;
   justify-content: center;
   align-items: center;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .storytelling-section-1 h1 {
@@ -184,58 +184,112 @@ main {
   justify-content: center;
 }
 
-.storytelling-section-2 {
-  border: 2px solid red;
-  margin: 0 auto;
-  height: 600px;
-  width: 100%;
-  max-width: 500px;
-  padding: 10px 10px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 500px;
+.storytelling-section-images {
+  height: 50vh;
+  width: 90%;
   position: relative;
-  align-items: center;
+  display: flex;
   justify-content: center;
-}
-
-.storytelling-section-2 > div {
-  height: 100%;
-  width: 100%;
-  display: block;
-}
-
-.storytelling-section-2 > div > img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  border-radius: 15px;
   align-items: center;
-  justify-content: center;
-  box-shadow: 10px 10px rgba(91, 91, 90, 0.2);
 }
 
-.ss2ImgSlash > img {
-  height: 60%;
-  grid-row: 1/3;
+.ss2ImgSlash, .ss2ImgBabyGiraffs, .ss2ImgFamily, .ss2ImgHarryP, .ss2ImgStRita {
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  box-shadow: 0px 5px 12px -4px var(--hmn-color-brand);
 }
 
-.ss2ImgBabyGiraffs > img {
-  grid-row: 3/5;
-  height: 80%;
+.ss2ImgSlash {
+  left: 0;
+  width: 15%;
+  height: 70%;
+  background-image: url(./Assets/PagWebNohe/Muñecos/Slash.jpg);
+  z-index: -3;
 }
-.ss2ImgFamily > img {
-  grid-row: 5-7;
+
+.ss2ImgBabyGiraffs {
+  left: 10%;
+  width: 20%;
+  height: 85%;
+  background-image: url(./Assets/PagWebNohe/Muñecos/BabyGiraffs.jpg);
+  z-index: -2;
+}
+.ss2ImgFamily {
+  width: 40%;
   height: 100%;
-  z-index: 1;
-}
-
-.ss2ImgHarryP > img {
-  grid-row: 7/9;
-  height: 80%;
   z-index: -1;
+  background-image: url(./Assets/PagWebNohe/Personalizados/Family.png);
 }
 
-.ss2ImgStRita > img {
+.ss2ImgHarryP {
+  right: 15%;
+  width: 20%;
+  height: 85%;
+  background-image: url(./Assets/PagWebNohe/Muñecos/HarryPotter.jpg);
+  z-index: -2;
+}
+
+.ss2ImgStRita {
+  right: 0;
+  width: 15%;
+  height: 70%;
+  background-image: url(./Assets/PagWebNohe/Muñecos/StRitaCasia.jpg);
+  z-index: -3;
+}
+
+.storytelling-section-2 {
+  margin: 50px;
+  font-size: var(--hmn-typography-p);
+  text-align: center;
+}
+
+#Creations-Gallery {
+  width: 100%;
+  height: 1fr;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  border: 2px solid red;
+}
+
+.Creations-Gallery-Card {
+width: auto;
+height: 500px;
+border-radius: 5px;
+min-width: 300px;
+max-width: 350px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+padding: 10px;
+box-shadow: 0px 5px 12px -4px var(--hmn-color-n-500);
+}
+
+.Creations-Gallery-Card > img {
+  width: 60%;
   height: 60%;
+  border-radius: 5px;
+  box-shadow: 0px 5px 12px -4px var(--hmn-color-n-500);
+
+}
+
+.Creations-Gallery-Card > div {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Creations-Gallery-Card > div > h3 {
+  border: 2px solid green;
+  font-family: var(--hmn-typography-brand);
+  font-size: var(--hmn-typography-h3);
 }
