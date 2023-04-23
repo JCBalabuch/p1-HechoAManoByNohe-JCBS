@@ -14,7 +14,6 @@
   </head>
 
   <body>
-    <!-- <div class="container"> -->
     <header class="header-logo">
       <div>
         <a href="https://instagram.com/hechoamano_bynohe?igshid=YmMyMTA2M2Y=">
@@ -28,14 +27,14 @@
           <li><a href="#Creations-Gallery">Creaciones</a></li>
           <li><a href="#Clients">Clientes</a></li>
           <li><a href="#">Materiales</a></li>
-          <li><a href="#">Nohely</a></li>
+          <li><a href="#quoteBible">Nohely</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <div class="imagenFondo">
         <img
-          src="./Assets/PagWebNohe/Muñecos/BabyAnimals0.jpg"
+          src="./Assets/PagWebNohe/Muñecos/ImagenFondo.jpg"
           alt="BabyAnimalsOnCrochet"
         />
       </div>
@@ -64,7 +63,7 @@
       </article>
       <article id="Creations-Gallery">
         <h2>Conoce nuestras creaciones</h2>
-        <section>
+        <section class="Creations-Gallery-Cards">
           <div class="Creations-Gallery-Card">
             <img
               src="./Assets/PagWebNohe/Personalizados/EngMiguel.jpg"
@@ -137,23 +136,64 @@
       </article>
       <article id="Clients">
         <h2>Conoce la opinión de nuestros clientes</h2>
-        <section class="clients-cards">
-          <div class="client-card">
-            <img src="./Assets/PagWebNohe/Icon-Client.png" alt="Icon Client" />
-            <p>Espectacularmente hermosos ❤</p>
-            <p>balabuchj</p>
-          </div>
-          <div class="client-card">
-            <img src="./Assets/PagWebNohe/Icon-Client.png" alt="Icon Client" />
-            <p>Espectacularmente hermosos ❤</p>
-            <p>balabuchj</p>
-          </div>
-          <div class="client-card">
-            <img src="./Assets/PagWebNohe/Icon-Client.png" alt="Icon Client" />
-            <p>Espectacularmente hermosos ❤</p>
-            <p>balabuchj</p>
-          </div>
-        </section>
+        <div class="all-clients-cards">
+          <section class="clients-cards">
+            <div class="client-card">
+              <img
+                src="./Assets/PagWebNohe/Icon-Client.png"
+                alt="Icon Client"
+              />
+              <p>
+                Hermosos !! Amiga linda todo el éxito para ti. Tienes unas manos
+                mágicas
+              </p>
+              <p>egliscalderon</p>
+            </div>
+            <div class="client-card">
+              <img
+                src="./Assets/PagWebNohe/Icon-Client.png"
+                alt="Icon Client"
+              />
+              <p>Espectacularmente hermosos ❤</p>
+              <p>balabuchj</p>
+            </div>
+            <div class="client-card">
+              <img
+                src="./Assets/PagWebNohe/Icon-Client.png"
+                alt="Icon Client"
+              />
+              <p>
+                Esas manos tejen cosas muy lindas. Me encanta tu arte con hilo y
+                lanas
+              </p>
+              <p>eugenia.castillo1959</p>
+            </div>
+            <div class="client-card">
+              <img
+                src="./Assets/PagWebNohe/Icon-Client.png"
+                alt="Icon Client"
+              />
+              <p>¡Una belleza! ❤</p>
+              <p>mcglizardi</p>
+            </div>
+            <div class="client-card">
+              <img
+                src="./Assets/PagWebNohe/Icon-Client.png"
+                alt="Icon Client"
+              />
+              <p>Preciosa ❤</p>
+              <p>zaidamariap</p>
+            </div>
+            <div class="client-card">
+              <img
+                src="./Assets/PagWebNohe/Icon-Client.png"
+                alt="Icon Client"
+              />
+              <p>Qué lindo 😍</p>
+              <p>osmaryamigurumi</p>
+            </div>
+          </section>
+        </div>
       </article>
       <section class="storytelling-section-3">
         <div>
@@ -171,11 +211,11 @@
           alguien.<br />
           ¡Elaborado con pasión y cuidado, cada pieza es única,... inspiradora y
           única!<br />
-          Dale a alguien especial el regalo del amor con una imagen de Hecho a mano
-          by Nohe!
+          Dale a alguien especial el regalo del amor con una imagen de Hecho a
+          mano by Nohe!
         </p>
       </section>
-      <blockquote cite="Bible">
+      <blockquote cite="Bible" id="quoteBible">
         <h2>
           "Todo lo que hagas, hazlo de corazón, <br />
           como para el Señor, no para la gente"
@@ -184,25 +224,29 @@
       </blockquote>
     </main>
     <footer>
-        <div class="rrss">
-          <ul>
-            <li>
-              <a href="https://www.linkedin.com/in/jenifferbalabuch/">
-                <img
-                  src="/Assets/PagWebNohe/icons8-linkedin-48.png"
-                  alt="linkedin"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/JCBalabuch">
-                <img src="/Assets/PagWebNohe/icons8-github-48.png" alt="github" />
-              </a>
-            </li>
-          </ul>
-        </div>
-        <p class="pageAuthor">Maquetado por Jeniffer Balabuch</p>
-      </footer> -->
-    <!-- </div>
+      <div>
+        <ul class="rrss">
+          <li>
+            <a href="https://www.linkedin.com/in/jenifferbalabuch/">
+              <img
+                src="/Assets/PagWebNohe/icons8-linkedin-48.png"
+                alt="linkedin"
+                class="rrssIcon"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/JCBalabuch">
+              <img
+                src="/Assets/PagWebNohe/icons8-github-48.png"
+                alt="github"
+                class="rrssIcon"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="pageAuthor">Maquetado por Jeniffer Balabuch</p>
+    </footer>
   </body>
 </html>
