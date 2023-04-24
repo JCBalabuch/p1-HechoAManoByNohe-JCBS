@@ -57,14 +57,6 @@
   --hmn-typography-pCard: 0.9rem;
   --hmn-typography-button: 0.75rem;
   --hmn-typography-a: 1.8rem;
-  /* --hmn-typography-h1: 90px;
-  --hmn-typography-h2: 60px;
-  --hmn-typography-h2Special: 50px;
-  --hmn-typography-h3: 30px;
-  --hmn-typography-p: 20px;
-  --hmn-typography-pCard: 15px;
-  --hmn-typography-button: 12px;
-  --hmn-typography-a: 30px; */
 
   /* BORDER RADIUS */
   --hmn-border-radius: 10px;
@@ -139,7 +131,6 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
   font-family: var(--hmn-typography-normal);
   color: var(--hmn-color-typography-main);
@@ -154,7 +145,7 @@ main {
 .imagenFondo > img {
   width: 100%;
   height: 100%;
-  object-fit:cover;
+  object-fit: cover;
 }
 
 .storytelling-section {
@@ -171,7 +162,6 @@ main {
   display: block;
   justify-content: center;
   align-items: center;
-  /* padding-bottom: 20px; */
 }
 
 .storytelling-section-1 h1 {
@@ -192,7 +182,7 @@ main {
 }
 
 .storytelling-section-images {
-  height: 100vh;
+  height: 70vh;
   width: 90%;
   margin: 20px 0;
   position: relative;
@@ -267,8 +257,6 @@ main {
   align-items: center;
   margin: 50px 0;
   border-top: 1px solid var(--hmn-color-brand);
-  border: 2px solid blue;
-
 }
 
 #Creations-Gallery h2 {
@@ -278,17 +266,17 @@ main {
 }
 
 .Creations-Gallery-Cards {
-  border: 2px solid red;
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  align-items: center;
-  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  align-self: center;
+  justify-self: center;
 }
 
 .Creations-Gallery-Card {
-  width: 300px;
+  width: 80%;
   height: 450px;
   display: flex;
   flex-direction: column;
@@ -445,6 +433,7 @@ blockquote p {
 
 footer {
   width: 100%;
+  height: 100px;
   background-color: var(--hmn-color-n-100);
   display: flex;
   align-items: center;
@@ -468,11 +457,19 @@ footer > div > ul > li > a > img {
   margin-right: 30px;
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
+  .header-nav {
+    display: block;
+  }
+
+  .header-nav a {
+    font-size: 1em;
+  }
+
   .imagenFondo {
-width: 100%;
-height: 200px;
-margin: 50px 0;
+    width: 100%;
+    height: 200px;
+    margin: 50px 0;
   }
 
   .storytelling-section-3 {
@@ -486,12 +483,21 @@ margin: 50px 0;
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
+  .storytelling-section-images {
+    display: none;
+  }
+
+  .Creations-Gallery-Cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   .storytelling-section-3 {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
- 
 }
