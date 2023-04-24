@@ -414,6 +414,11 @@ main {
   padding-left: 30px;
 }
 
+.hmbn {
+  font-family: var(--hmn-typography-brand);
+  font-size: var(--hmn-typography-h3);
+}
+
 blockquote {
   margin: 50px;
 }
@@ -499,5 +504,16 @@ footer > div > ul > li > a > img {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin: 0 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .storytelling-section-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 50px;
   }
 }
