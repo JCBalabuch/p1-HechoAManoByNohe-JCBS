@@ -463,6 +463,11 @@ footer > div > ul > li > a > img {
 }
 
 @media screen and (max-width: 375px) {
+
+  header {
+    top: 0;
+  }
+
   .header-nav {
     display: block;
   }
